@@ -1,0 +1,187 @@
+@import 'base';
+
+@vw:3.75vw;
+@color:#fb7299;
+
+// 头部 固定
+header{
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1;
+width: 100%;
+// width: 100vw;
+height: (84 / @vw);
+background-color: white;
+padding-top: (3 / @vw);
+    //top
+    .top{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        height: (44 /@vw);
+        // background-color: aquamarine;
+        padding-left: (18 / @vw);
+        padding-right: (12 / @vw);
+
+
+        .left{
+            .iconfont{
+                font-size:(29 /@vw );
+                color: @color;
+            }
+        }
+
+
+        .right{
+            display: flex;
+            .iconfont{
+                font-size:(22 /@vw );
+                color: #ccc;
+            }
+            .login{
+                width: (24 /@vw );
+                height:  (24 /@vw );
+                margin-left: (24 /@vw );
+            }
+
+            .download{
+                width: (72 /@vw );
+                height: (24 /@vw );
+                margin-left: (24 /@vw );
+            }
+        }
+    }
+
+    //bottom{
+    .bottom{
+            display: flex;
+            justify-content: space-between;
+            height: (40 /@vw);
+            border-bottom: 1px solid #ccc;
+// overflow: hidden;
+
+
+            .tab{
+                ul{
+                    display: flex;
+                    width:(338/@vw) ;
+                    overflow: hidden;
+
+                    li{
+                        padding: 0 (16 /@vw);
+                        a{
+                            display: block;
+                            width:(28  /@vw) ;
+                            height:(40 /@vw) ;
+                            line-height:(40 /@vw) ;
+                            font-size: (14 /@vw);
+                           
+
+                          &.current{
+                            color: @color;
+                            border-bottom: 2px solid @color;
+                        }
+                        }
+                   
+                    }
+                }
+            }
+
+            .more{
+                a{
+                    display: block;
+                    width: (40 / @vw);
+                    height: (40 /@vw);
+                   color: #ccc;
+                    line-height: (40 /@vw);
+                    text-align: center;
+                    .iconfont{
+                         font-size: (22 /@vw);}
+                    
+                }
+            }
+
+
+
+
+
+        }
+
+
+}
+// 头部 固定
+
+// 视频
+.video_content{
+    padding: (5 /@vw) (5 /@vw) 0;
+    margin-top: (83 /@vw);
+    .video_list{
+        display: flex;
+        flex-wrap: wrap;
+        a{
+            width: 50% ;
+            padding: (8 /@vw) (5 /@vw);
+            // background-color: pink;
+            font-size: (12 /@vw);
+
+            .pic{
+                position: relative;
+                .count{
+                    position: absolute;
+                    left: 0;
+                    bottom: 0;
+                    display: flex;
+                    justify-content: space-between;
+                    width: 100%;
+                    padding: (8 /@vw);
+                    background-image: linear-gradient(0deg,rgba(0,0,0,.85),transparent);
+
+                    i{
+                        vertical-align:top;
+                        font-size:(15 /@vw) ;
+                    }
+                    p{
+                       
+                        color: #fff;
+                    }
+                }
+            }
+            .txt{
+                margin-top: (5 /@vw);
+
+            }
+        }
+    }
+}
+// 视频
+
+
+
+// 固定按钮
+.home{
+    a{
+    z-index: 1;
+    position: fixed;;
+    bottom: (30 /@vw);
+    left: 0;
+    display: block;
+    margin: 0 (12/@vw);
+    width: (351 /@vw);
+    height: (37 /@vw);
+    background-color:  @color;
+    color: #fff;
+    border-radius:(18.5 /@vw) ;
+    font-size: (14 /@vw);
+    text-align: center;
+    line-height: (37 /@vw);
+    
+    i{
+        margin-right: (10 /@vw);
+        font-size: (16 /@vw);
+    }
+}
+}
+
+// 固定按钮
